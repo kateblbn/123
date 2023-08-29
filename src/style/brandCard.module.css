@@ -1,0 +1,110 @@
+.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 80%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 0 20px;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 7px 2px  rgb(188, 184, 187);
+}
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.changeImage {
+    width: 50%;
+}
+.image {
+    width: 300px;
+    margin: 0 auto;
+}
+.leftSide {
+    width: 50%;
+}
+.brand {
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 500;
+}
+.title {
+    font-weight: 500;
+}
+.wraptprtg {
+    display: flex;
+    height: 25px;
+    align-items: center;   
+    gap: 10px; 
+}
+.noReviewText {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+}
+.price {
+    font-size: 25px;
+    font-weight: 600;
+}
+.descrTitle {
+    text-align: center;
+    margin: 5px 0;
+}
+.line {
+    width: 50%;
+    height: 5px;
+    background-color: black;
+    margin: 0 auto;
+}
+.descr {
+    font-size: 18px;
+}
+.colorBlockWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+    font-size: 16px;
+}
+.color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 5px;
+    transition: .5s all;
+    &:hover {
+        border: 1px solid black;
+        
+    }
+}
+.wrapcolors {
+    flex-wrap: wrap;
+    font-style: italic;
+    display: flex;
+    gap: 20px;
+}
+.colorBlockWrapper {
+    margin-bottom: 10px;
+}
+.titleColor {
+    font-style: normal;
+}
+
+@media (max-width: 901px) {
+    .wrap {
+        flex-direction: column;
+    }
+    .changeImage {
+        width: 100%;
+    }
+    .noReviewText {
+        font-size: 12px;
+    }
+    .leftSide {
+        width: 100%;
+    }
+}

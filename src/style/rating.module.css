@@ -1,0 +1,25 @@
+.rating {
+    display: inline-block;
+    position: relative;
+    width: 105px;
+}
+.ratingOuter::before,
+.ratingInner::before {
+    content: '\f005 \f005 \f005 \f005 \f005';
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    font-size: 18px;
+}
+.ratingInner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    overflow: hidden;
+}
+.ratingInner:before {
+    color: rgb(207, 128, 79);
+}
+.ratingOuter::before {
+    color: rgb(199, 199, 205);
+}
